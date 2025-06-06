@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>حسينية وموكب أم الحسن</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="شعار الحسينية" />
+    <nav>
+      <a href="#live">📺 البث المباشر</a>
+      <a href="#gallery">📸 المعرض</a>
+      <a href="#poems">📖 القصائد</a>
+      <a href="#about">من نحن</a>
+      <a href="#contact">تواصل معنا</a>
+      <a href="#ziyarah">📿 الزيارة</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>من نحن</h2>
+      <p>
+        تأسست حسينية وموكب أم الحسن في البصرة - قضاء الفاو سنة 2008 (1429 هـ)، على يد المرحوم الحاج علي عبد الواحد شايع...
+      </p>
+    </section>
+
+    <section id="events">
+      <h2>📅 المناسبات القادمة</h2>
+      <ul id="events"></ul>
+    </section>
+
+    <section id="live">
+      <h2>📺 البث المباشر</h2>
+      <iframe 
+        src="https://www.youtube.com/embed/live_stream?channel=UC6EjcwqBnn1VzavOaD_JAtA" 
+        width="100%" 
+        height="500" 
+        frameborder="0" 
+        allowfullscreen>
+      </iframe>
+    </section>
+
+    <section id="gallery">
+      <h2>📸 المعرض</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="images/photo1.jpg" alt="صورة 1"></div>
+        <div class="gallery-item"><img src="images/photo2.jpg" alt="صورة 2"></div>
+        <div class="gallery-item"><img src="images/photo3.jpg" alt="صورة 3"></div>
+      </div>
+    </section>
+
+    <section id="poems">
+      <h2>📖 القصائد</h2>
+      <div class="video-grid">
+        <iframe src="https://www.youtube.com/embed/1A1aJ-bmXLw" allowfullscreen></iframe>
+        <!-- أضف المزيد حسب رغبتك -->
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>📬 تواصل معنا</h2>
+      <form id="contact-form" onsubmit="handleContactForm(event)">
+        <input type="text" id="name" placeholder="الاسم" required />
+        <textarea id="message" rows="4" placeholder="الرسالة" required></textarea>
+        <button type="submit">إرسال</button>
+      </form>
+      <ul>
+        <li><a href="https://www.instagram.com/umalhu7san">انستاغرام</a></li>
+        <li><a href="https://t.me/umalhu7san">تليكرام</a></li>
+      </ul>
+    </section>
+
+    <section id="ziyarah">
+      <h2>📿 زيارة عاشوراء</h2>
+      <p>السلام على الحسين... (نص الزيارة)</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 حسينية وموكب أم الحسن - جميع الحقوق محفوظة
+  </footer>
+</body>
+</html>
